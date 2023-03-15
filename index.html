@@ -11,33 +11,38 @@
     #app-wrapper {
         display: flex;
         justify-content: center;
+      
+     
     }
     
     #container {
         display: flex;
         justify-content: space-between;
-        width: 1440px;
+        width: 1600 px;
     }
     
     #left-container {
         display: flex;
-        width: 120px;
+        width: 212px;
         height: 880px;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
+        padding-right: 15px;
+
+
     }
     
     #left-above {
         flex-direction: column;
         display: flex;
-        align-items: flex-end;
         width: 100%;
-        padding-right: 10px;
+        align-items: flex-end;
+        
     }
     
     .left-item {
-        margin-top: 36px;
+        margin-top: 45px;
         width: 45px;
     }
     
@@ -46,27 +51,114 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-right: 10px;
     }
     
     .left-setting {
-        margin-top: 36px;
+        margin-top: 30px;
     }
     
     #center {
-        width: 910px;
+      
+        width: 914px;
+    
+        justify-content: center;
+        align-items: center;
+       
+
     }
     
     #right {
-        width: 440px;
+        width: 582px;
         background-color: aqua;
     }
-    
-    #img-center {
+
+    #left1{
+        justify-content: flex-start;
+        display: flex;
+        padding-bottom: 20px;
+        align-items: flex-start;
+        padding-left:33px
+
+    }
+
+    #png{
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    .mc{
+        position: absolute;
+        top:10px;
+        right: 60px;
+    }
+    .p{
+        position: absolute;
+        top: 10px;
+        left: 60px;
+        
+    }
+
+    #png2{
+    
+        display: flex;
+        justify-content:space-evenly;
+        padding-top: 26px;
+    }
+
+
+    #eg{
+        position: absolute;
+    }
+
+
+    #png3{
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        width: 650px;
+        padding-left: 100px;
+   
+    }
+  
+
+    .item{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 26px;
+        width: 110px;
+        margin-left: 35px;
+        
+    }
+
+
+
+    #container1{
+        position: relative;
+        justify-content: space-evenly;
+
+    }
+
+    .p1{
+        position: absolute;
+        top:8px;
+        right:10px ;
+        width: 30px;
+    }
+    .p2{
+        position: absolute;
+        top:8px;
+        left:10px ;
+        width: 110px;
+    }
+    .p3{
+        position: absolute;
+        top:5px;
+        left:10px ;
+        width: 100px;
+    }
+
 </style>
 
 <body>
@@ -87,13 +179,52 @@
                 </div>
             </div>
             <div id="center">
-                <p style="font-weight: bold; font-size: 30px;">Meeting title</p>
-                <span id="tuade"><img src="\img\user.png" Internal> <img src="\img\calender_small.png"> 02,2022 | 08:00-09:00 AM</span>
-                <div id="img-center">
-                    <img src="\img\img_big.png">
+                <div id="center-above">
+                    <h1 style="padding-top: 20px;padding-left: 33px;">Meeting title</h1>
                 </div>
+                <div id="left1">
+                    <img style="padding-right: 15px" src="img\calender_small.png">
+                    <span style="padding-right:15px"> Sep 02, 2022</span>
+                    <span>|</span>
+                    <span style="padding-left:10px">08:00 - 09:00 AM</span>
+                </div>
+                <div id="png">
+                    <img src="img\img_big.png">
+                    <img class ="mc" src="img\mic_color.png">
+                    <img class="p"src="img/bẹnamin.png">
+                </div>
+               <div id="png2">
+                    <div id="container1">
+
+                        <img src="\img\img2.png">
+                        <img class="p1"src="\img\mic_grey_color.png">
+                        <img class="p2" src="img/Christian.png">
+                    </div>
+                    <div id="container1">
+                        <img src = "img\img1.png">
+                        <img class="p1"src="\img\mic_grey_color.png">
+                        <img class="p3" src="img/deborahCHu.png">
+                    </div>
+                    <div id="container1">
+                        <img src="img\img.png">
+                        <img class="p1"src="\img\mic_grey_color.png">
+                        <img class="p3" src="img/Jordan.png">   
+                    </div>
+                </div>
+                <div id="png3">
+                    <img class="item"src="\img\mic_grey_color.png">
+                    <img class="item" src="\img\cam_color.png">
+                    <img class="item" src ="\img\speaker_grey_color.png">
+                    <div class="item" style="color:#fff;background-color: red;width:260px;height:50px;text-align: center;">End Meeting</div>
+                    <img class="item" src ="\img\button 2179.png">
+                    <img class="item" src ="\img\share.png">
+                    <img class="item" src="img/bacham.png">
+                </div>
+              
             </div>
-            <div id="right">right</div>
+            <div id="right">right
+
+            </div>
         </div>
     </div>
 </body>
