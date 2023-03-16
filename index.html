@@ -29,7 +29,7 @@
         justify-content: space-between;
         align-items: flex-end;
         padding-right: 15px;
-
+        border-right: 1px solid whitesmoke;
 
     }
     
@@ -67,6 +67,31 @@
 
     }
     
+    #center-above{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        width: 830px;
+        height:40px ; 
+        padding-top: 44px;
+        padding-left: 36px;
+        padding-bottom: 15px;
+    }
+
+    #center-title{
+        display: flex;
+        flex-direction: row;
+        border:1px solid red;
+        border-radius: 20px;
+        width: 92px;
+        height: 45px;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+
     #right {
         width: 582px;
         background-color: aqua;
@@ -76,22 +101,32 @@
         justify-content: flex-start;
         display: flex;
         padding-bottom: 20px;
-        align-items: flex-start;
+        align-items: center;
         padding-left:33px
 
     }
 
+    #user{
+        background-color: pink;
+        display: flex;
+        align-items: center;
+        justify-content: space-around   ;
+        width:86px;
+        border-radius: 10px;
+        height: 27px;
+        margin-right: 15px;
+    }
+
+
+
+   
     #png{
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .mc{
-        position: absolute;
-        top:10px;
-        right: 60px;
-    }
+   
     .p{
         position: absolute;
         top: 10px;
@@ -114,10 +149,9 @@
 
     #png3{
         display: flex;
-        justify-content:space-evenly;
+        justify-content:center;
         align-items: center;
-        width: 650px;
-        padding-left: 100px;
+    
    
     }
   
@@ -125,11 +159,11 @@
     .item{
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
         margin-top: 26px;
-        width: 110px;
-        margin-left: 35px;
-        
+        width: 46px;
+       padding-right: 10px;
+       padding-left: 10px;
     }
 
 
@@ -137,28 +171,71 @@
     #container1{
         position: relative;
         justify-content: space-evenly;
-
+        
+ 
     }
 
     .p1{
+        display: flex;
         position: absolute;
+        justify-content: space-between;
         top:8px;
-        right:10px ;
-        width: 30px;
+        width: 240px;
+        height: 30px;
+        margin: auto;
+        padding-left: 10px;
+        top: 5px;
     }
-    .p2{
-        position: absolute;
-        top:8px;
-        left:10px ;
-        width: 110px;
-    }
-    .p3{
-        position: absolute;
-        top:5px;
-        left:10px ;
-        width: 100px;
+    
+
+
+
+    #endM{
+        background-color: red;
+        width: 124px;
+        height: 44px;
+        border:0px solid;border-radius: 4px;
+        color: #fff;
+      
     }
 
+
+
+    .namechat{
+        display: flex;
+        width:120px;
+        height: 30px;
+        justify-content: space-evenly;
+        border-radius: 3px;
+        align-items: center;
+        background-color: lightslategray;
+    }
+    .namechat1{
+        display: flex;
+        width: 157px;
+        height: 37px;
+        border-radius: 3px;
+        align-items: center;
+        background-color: lightslategray;
+        color: #fff;
+        margin-left: 10px;
+        margin-top: 10px;
+        
+    }
+
+
+
+    #imgbig{
+        display: flex;
+        position: absolute;
+        width:820px;
+        height: 25px;
+        justify-content: space-between;
+        align-items: center;
+        top: 10px;
+        padding-left: 10px;
+        margin-top:px;    
+    }
 </style>
 
 <body>
@@ -180,42 +257,71 @@
             </div>
             <div id="center">
                 <div id="center-above">
-                    <h1 style="padding-top: 20px;padding-left: 33px;">Meeting title</h1>
+                    <h1>Meeting title</h1>
+                    <div id="center-title">
+                        <div style="height: 8px; width: 8px; border-radius: 15px; background-color: red;"></div>
+                        <span>12:00</span>
+                    </div>
                 </div>
                 <div id="left1">
-                    <img style="padding-right: 15px" src="img\calender_small.png">
-                    <span style="padding-right:15px"> Sep 02, 2022</span>
+                    <div id="user">
+                        <img style="width: 12px;height: 10;"  src="img/user.png">
+                        <span>internal</span>
+                    </div>
+                    <img style="padding-right: 15px;" src="img\calender_small.png">
+                    <span style="padding-right: 15px;"> Sep 02, 2022</span>
                     <span>|</span>
-                    <span style="padding-left:10px">08:00 - 09:00 AM</span>
+                    <span style="padding-left: 15px;">08:00 - 09:00 AM</span>
                 </div>
                 <div id="png">
                     <img src="img\img_big.png">
-                    <img class ="mc" src="img\mic_color.png">
-                    <img class="p"src="img/bẹnamin.png">
+                    <div id="imgbig">   
+                        <div class="namechat1">
+                            <div style="height: 10px; width:10px; border-radius: 15px; background-color: green;margin-left: 5px;"></div>
+                            <span style="padding-left: 5px;">Benjamin Crawford</span>
+                         </div>
+                         <img  style="margin-right: 15px; margin-top:10px"  src="img\mic_color.png">
+                    </div>
                 </div>
                <div id="png2">
                     <div id="container1">
-
-                        <img src="\img\img2.png">
-                        <img class="p1"src="\img\mic_grey_color.png">
-                        <img class="p2" src="img/Christian.png">
+                            <img src="\img\img2.png">
+                            <div class="p1">
+                                <div class="namechat">
+                                    <div style="height: 8px; width: 8px; border-radius: 15px; background-color: green;"></div>
+                                    <span>Christian Scotte</span>
+                                </div>
+                                <img src="\img\mic_grey_color.png">
+                            </div>
+                       
                     </div>
                     <div id="container1">
                         <img src = "img\img1.png">
-                        <img class="p1"src="\img\mic_grey_color.png">
-                        <img class="p3" src="img/deborahCHu.png">
+                        <div class="p1">
+                            <div class="namechat">
+                                <div style="height: 8px; width: 8px; border-radius: 15px; background-color: green;"></div>
+                                <span>Deborah Chu</span>
+                            </div>
+                            <img src="\img\mic_grey_color.png">
+                        </div>
+                       
                     </div>
                     <div id="container1">
                         <img src="img\img.png">
-                        <img class="p1"src="\img\mic_grey_color.png">
-                        <img class="p3" src="img/Jordan.png">   
+                        <div class="p1">
+                            <div class="namechat">
+                                <div style="height: 8px; width: 8px; border-radius: 15px; background-color: green;"></div>
+                                <span>Jorden Nieves</span>
+                            </div>
+                            <img src="\img\mic_grey_color.png">
+                        </div>
                     </div>
                 </div>
                 <div id="png3">
                     <img class="item"src="\img\mic_grey_color.png">
                     <img class="item" src="\img\cam_color.png">
                     <img class="item" src ="\img\speaker_grey_color.png">
-                    <div class="item" style="color:#fff;background-color: red;width:260px;height:50px;text-align: center;">End Meeting</div>
+                    <button class="item"  id="endM">End meeting</button>
                     <img class="item" src ="\img\button 2179.png">
                     <img class="item" src ="\img\share.png">
                     <img class="item" src="img/bacham.png">
